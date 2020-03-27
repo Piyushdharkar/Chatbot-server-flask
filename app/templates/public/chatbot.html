@@ -1,0 +1,36 @@
+{% extends "/public/templates/base.html" %}
+
+{% block title %}Chat Bot{% endblock %}
+
+{% block main %}
+
+<center>
+    <h1>
+        <img
+                src="{{ url_for('static', filename='img/candice.png') }}"
+                alt="CANDICE"
+                style="width:40px;height:40px;"
+        />Your Personal ChatBot
+    </h1>
+</center>
+<div class="box"></div>
+<div class="boxed">
+    <div>
+        <div id="chatbox">
+            <img
+                    src="{{ url_for('static', filename='img/candice.png') }}"
+                    alt="CANDICE"
+                    style="width:40px;height:40px;"
+            />
+            <p class="botText">
+                <span>Hi! I'm Candice your personal ChatBot</span>
+            </p>
+        </div>
+        <div id="userInput">
+            <input id="textInput" type="text" name="msg" placeholder="Message"/>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
